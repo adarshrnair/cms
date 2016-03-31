@@ -20,7 +20,7 @@ $text = $row["text"] ;
 function title1()
 {
 	alert("reached title1");
-	window.location.assign("titleeditor/page1.php");
+	window.location.assign("titleeditor/page1/page1.php");
 }
 </script>
 <title>Content Management System</title>
