@@ -1,5 +1,5 @@
 <?php
-include("../connection.php");
+include("../../connection.php");
 $sql = "SELECT * FROM `title` WHERE `page`=1 ";
 
 $result = mysqli_query($conn, $sql);
