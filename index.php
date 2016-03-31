@@ -9,7 +9,8 @@ if (mysqli_num_rows($result) > 0) {
 				    
 while($row = mysqli_fetch_assoc($result)) {
 $color = $row["color"] ;
-$text = $row["text"] ;
+$text  = $row["text"] ;
+$style = $row["font"] ;
 }
 }
 ?>
@@ -24,8 +25,12 @@ function title1()
 }
 </script>
 <title>Content Management System</title>
-<h1 onClick="title1()"><?php echo $text ?></h1>
+<h1 onClick="title1()" style="color:<?php echo $color ?>"> <font face="<?php echo $style ?>">
+    <?php echo $text ?></h1></font>
+    
 </head>
 <body>
 This is an example page which will be used to create all other pages for CMS
 </body>
+    
+    
