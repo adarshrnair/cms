@@ -24,6 +24,7 @@ function title1()
 	window.location.assign("titleeditor/page1/page1.php");
 }
 </script>
+
 <title>Content Management System</title>
 <h1 onClick="title1()" style="color:<?php echo $color ?>"> <font face="<?php echo $style ?>">
     <?php echo $text ?></h1></font>
